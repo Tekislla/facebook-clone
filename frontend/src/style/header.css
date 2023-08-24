@@ -1,0 +1,14 @@
+.headerContainer {
+    background-color: #4267B2;
+    padding: 10px;
+    color: #fff;
+}
+  
+.headerTitle {
+font-size: 24px;
+margin: 0;
+}
+
+.headerTitle span {
+font-weight: bold;
+}

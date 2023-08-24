@@ -1,0 +1,7 @@
+BACKEND:
+digitar 'npm run start', a API rodará na porta 4000 e o endpoint é '/posts'
+
+FRONTEND:
+digitar 'npm start', a aplicação rodará na porta 3000
+
+**A PASTA NODE_MODULES NÃO ESTARÁ JUNTO COM O FRONTEND.**

@@ -1,0 +1,29 @@
+#postsContainer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.postItem {
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+background-color: #fff;
+}
+
+.postItem p {
+margin: 0;
+}
+
+.postItem #author {
+font-weight: bold;
+color: #385898;
+}
+
+.postItem #content {
+margin-top: 5px;
+}

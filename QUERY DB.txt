@@ -1,0 +1,23 @@
+CREATE DATABASE posts;
+
+USE posts;
+
+CREATE TABLE users (
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE post (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  content VARCHAR(255) NOT NULL,
+  userId INT NOT NULL,
+  FOREIGN KEY (userId) REFERENCES users(id)
+);
+
+INSERT INTO users(name) VALUES ('Steam');
+INSERT INTO users(name) VALUES ('João');
+INSERT INTO users(name) VALUES ('Laurem');
+
+INSERT INTO post(content, userId) VALUES ('O jogo Desktop Dungeons está gratuito por tempo ilimitado. Ativando o jogo em sua conta ele será seu para SEMPRE!', '1');
+INSERT INTO post(content, userId) VALUES ('Este é um exemplo de post para a aplicação da N2 da matéria de programação web!', '2');
+INSERT INTO post(content, userId) VALUES ('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse sed nisi lacus sed viverra tellus in. Nulla aliquet enim tortor at auctor urna nunc. Donec pretium vulputate ', '3');
